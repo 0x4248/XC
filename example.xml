@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xml>
+    <animals>
+        <dog breed="Vizsla" gender="male" born="2021">Archie</dog>
+        <dog breed="Beegle" gender="female" born="2019">Luna</dog>
+        <dog breed="Golden retriever" gender="male" born="2022">Gus</dog>
+        <cat breed="Javanese" gender="male" born="2020">Milo</cat>
+        <cat breed="Aegean" gender="female" born="2018">Ella</cat>
+        <hamster breed="Roborovski Dwarf" gender="female" born="2021">Peanut</hamster>
+        <hamster breed="Syrian" gender="male" born="2022">Pumpkin</hamster>
+    </animals>
+</xml>
