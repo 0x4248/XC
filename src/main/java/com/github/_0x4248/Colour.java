@@ -19,8 +19,10 @@ class Colour {
     /**
      * setColour - Set the colour of the text
      * <br>
+     * <br>
      * If the colour is not provided, the default colour is reset (resets the colour to the default)
-     *
+     * <br>
+     * <br>
      * <blockquote><pre>
      *     Colour.setColour("red") - Sets the colour to red
      *     Colour.setColour(null) - Resets the colour to the default
