@@ -46,40 +46,7 @@ public class Main {
     public static void main(String[] args) throws ParserConfigurationException {
         Logger.log("Starting XC");
 
-        for (String arg : args) {
-            Logger.debug("Parsing argument: " + arg);
-            if (arg.startsWith("-f=")) {
-                file = arg.substring(3);
-                Logger.debug("File: " + file);
-            } else if (arg.startsWith("-l=")) {
-                location = arg.substring(3);
-                Logger.debug("Location: " + location);
-            } else if (arg.startsWith("-m=")) {
-                mode = arg.substring(3);
-                Logger.debug("Mode: " + mode);
-            } else if (arg.startsWith("-i=")) {
-                input = arg.substring(3);
-                Logger.debug("Input: " + input);
-            } else if (arg.startsWith("-")) {
-                flags.add(arg.substring(1));
-                Logger.debug("Flag: " + arg.substring(1));
-            }
-        }
-
-        if (file.isEmpty()) {
-            Logger.error("No file provided");
-            System.exit(1);
-        }
-
-        if (location.isEmpty()) {
-            Logger.error("No location provided");
-            System.exit(1);
-        }
-
-        if (mode.isEmpty()) {
-            Logger.error("No mode provided");
-            System.exit(1);
-        }
+        Args.parseArgs(args);
 
         try {
             File xmlFile = new File(file);
