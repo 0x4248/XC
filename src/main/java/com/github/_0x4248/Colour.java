@@ -14,6 +14,9 @@ package com.github._0x4248;
  * Colour - A simple class for setting
  */
 class Colour {
+    /**
+     * colour_on - A boolean to enable or disable the colouring
+     */
     public static boolean colour_on = true;
 
     /**
@@ -35,7 +38,6 @@ class Colour {
      * @return - The colour code for the text
      */
     public static String setColour(String colour) {
-
         if (colour_on) {
             return switch (colour) {
                 case "red" -> "\u001B[31m";
