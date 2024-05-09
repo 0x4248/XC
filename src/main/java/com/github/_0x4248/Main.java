@@ -32,6 +32,7 @@ import javax.xml.transform.stream.*;
 
 
 public class Main {
+    public static final String version = "1.0.0";
     public static String file = "";
     public static String location = "";
     public static String mode = "";
@@ -44,7 +45,7 @@ public class Main {
      * @throws ParserConfigurationException
      */
     public static void main(String[] args) throws ParserConfigurationException {
-        Logger.log("Starting XC");
+        Logger.log("Starting XC v" + version);
 
         Args.parseArgs(args);
 
