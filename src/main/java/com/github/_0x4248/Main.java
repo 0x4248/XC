@@ -55,7 +55,7 @@ public class Main {
             Document doc = dBuilder.parse(xmlFile);
             doc.getDocumentElement().normalize();
 
-            Logger.log("XML file loaded");
+            Logger.log("XML file loaded: " + file);
 
             Element root = doc.getDocumentElement();
             Logger.debug("Root element: " + root.getNodeName());
