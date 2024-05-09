@@ -41,7 +41,8 @@ public class Args {
     }
 
     /**
-     * checkForMissingArgs - Check for missing arguments
+     * checkForMissingArgs - Check for missing arguments and
+     * exit if any are missing
      */
     public static void checkForMissingArgs() {
         Logger.debug("Checking for missing arguments");
